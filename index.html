@@ -81,7 +81,7 @@
             <h5>Local Storage VS Session Storage</h5>
             <p>Local storage data is sotred for long time while session storage data is stored for only when the tab is open, after the tab is closed it is expired. The scope of the session storage is in a single tab only. But the local storage data can be accessed by any tab in the browser</p>
             <h5>What JavaScript eventloop does</h5>
-            <p>We know that JavaScript is a single thread programming language. JavaScript eventloop facilates to manage multithreaded tasks</p>
+            <p>We know that JavaScript is a single threaded programming language. But writing multithreded program can not be avoided nowadays. JavaScript eventloop facilates to manage multithreaded programs. It is a process where it waits for the callstack to be cleared before pushing callbacks from the taskqueue to the callstack. When the stack is clear, the eventloop triggers and checks the taskqueue for available callbacks. If there are any, it pushes it to the callstack, waits for the callstack to be cleared again, and repeats the same process.</p>
         </section>
         <footer></footer>
 
